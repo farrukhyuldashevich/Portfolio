@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farrukh Rasulov | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="#profile"><img src="./assets/revo-logo.png" alt="Revo Logo" class="brand-logo" /></a>
+    </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#case-studies">Explorations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav id="hamburger-nav">
+      <div class="logo"></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#case-studies" onclick="toggleMenu()">Explorations</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Farrukh Rasulov profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hi, I'm</p>
+        <h1 class="title">Farrukh</h1>
+        <p class="section__text__p2">Aspiring Product Innovator</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume (Product).pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/farrukh-rasulov/'"
+          />
+          <img
+            src="./assets/medium.png"
+            alt="My Medium profile"
+            class="icon"
+            onclick="location.href='https://medium.com/@farrukh_46523'"
+          />
+        </div>
+      </div>
+    </section>
+
+<!-- About Section -->
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="section__pic-container">
+      <img
+        src="./assets/about-pic.png"
+        alt="Profile picture"
+        class="about-pic"
+      />
+    </div>
+    <div class="about-details-container">
+      <div class="text-container">
+        <p>
+          I’m a junior at Minerva University, studying Brand Management and Computer Science.
+          <br /><br />
+          I am motivated by two things: building things that bring people joy, 
+          and turning ideas into real business opportunities.
+          <br /><br />
+          That balance is what drew me to product management - where business, technology, 
+          and people meet (it’s also what drives my entrepreneurial passion).
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Facts Section -->
+<section id="facts">
+  <p class="section__text__p1">More About Me :)</p>
+
+  <div class="facts-container">
+    <!-- Fact 1 -->
+    <div class="fact-card">
+      <div class="fact-card-inner">
+        <div class="fact-card-front">
+          <img src="./assets/box1.png" alt="Fact 1 Icon" class="fact-icon" />
+        </div>
+        <div class="fact-card-back">
+          <span class="card-body">From the Silk Road to Silicon Valley. Living in 7 countries by 23 taught me that while 'User Needs' are universal, 'Cultural Context' defines success.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fact 2 -->
+    <div class="fact-card">
+      <div class="fact-card-inner">
+        <div class="fact-card-front">
+          <img src="./assets/box2.png" alt="Fact 2 Icon" class="fact-icon" />
+        </div>
+        <div class="fact-card-back">
+          <span class="card-body">Sparring is real-time A/B testing. 7 years of martial arts taught me to take the hits, analyze failure, and iterate on my strategy instantly.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fact 3 -->
+    <div class="fact-card">
+      <div class="fact-card-inner">
+        <div class="fact-card-front">
+          <img src="./assets/box3.png" alt="Fact 3 Icon" class="fact-icon" />
+        </div>
+        <div class="fact-card-back">
+          <span class="card-body">Indian Jugaad (aka the art of doing more with less) is the ultimate MVP mindset: solving complex problems with zero resources and infinite creativity.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fact 4 -->
+    <div class="fact-card">
+      <div class="fact-card-inner">
+        <div class="fact-card-front">
+          <img src="./assets/box4.png" alt="Fact 4 Icon" class="fact-icon" />
+        </div>
+        <div class="fact-card-back">
+          <span class="card-body">From a 13-year-old waiter to running a branch at 16. Bazaar negotiations and drunk customers taught me PM grit before I knew what a PM was.</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='#Experience'"
+  />
+  </section>
+
+    <!-- Experience Section -->
+    <section id="Experience">
+      <p class="section__text__p1">What We Did</p>
+      <h1 class="title">Experience</h1>
+    
+      <div class="work-grid">
+        <!-- Authme Card -->
+        <div class="work-card">
+          <div class="work-card-header">
+            <div class="work-logo-container">
+              <img src="./assets/authme-logo.png" alt="Authme Logo" class="work-logo">
+            </div>
+            <div class="work-text-container">
+              <h3 class="org-line">Authme — Identity verification (eKYC) platform</h3>
+              <p class="work-meta-line"><span class="label">Role:</span>AI Product Strategy Intern, Team Lead</p>
+              <p class="work-meta-line"><span class="label">Duration:</span>Sep 2024 – Dec 2024 (4 mos)</p>
+              <p class="work-meta-line"><span class="label">Location:</span>Taipei, Taiwan</p>
+              <p class="work-scope-summary">Supported international expansion and improved verification UX by diagnosing failure patterns across markets and translating them into requirements, rollout plans, and QA gates.</p>
+            </div>
+          </div>
+          <details class="work-accordion">
+            <summary>View details</summary>
+            <div class="work-accordion-content">
+              <div class="work-accordion-section">
+                <h4 class="work-accordion-title">Problem / Context</h4>
+                <p>Identity verification performance varies dramatically by country (documents, languages, device conditions, regulation). The goal was to improve completion and trust in key verification flows while staying compliant with privacy and regional requirements.</p>
+              </div>
+              <div class="work-accordion-section">
+                <h4 class="work-accordion-title">What I Owned</h4>
+                <ul class="work-bullet-list">
+                  <li>Tested 4 identity verification flows across users/markets, documenting 10+ recurring UX + localization failure patterns and translating them into a prioritized issue taxonomy and fix recommendations.</li>
+                  <li>Synthesized competitive + regulatory constraints for 3 priority markets, turning gaps into market-specific requirements and rollout considerations (trust signals, doc support, fallbacks).</li>
+                  <li>Defined a repeatable testing + launch framework (success metrics, QA checkpoints, phased rollout gates) to de-risk expansion under varying privacy policies.</li>
+                </ul>
+              </div>
+              <div class="work-accordion-section">
+                <h4 class="work-accordion-title">Outputs & Outcomes</h4>
+                <ul class="work-bullet-list">
+                  <li>Produced a prioritized backlog + requirements pack used to guide internationalization and UX improvements across verification flows.</li>
+                  <li>Delivered a market-entry readiness snapshot for 3 target markets (key gaps, constraints, recommended sequencing).</li>
+                  <li>Implemented a QA + rollout playbook enabling more consistent evaluation of identity verification performance across regions.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- Globstudy Card -->
+        <div class="work-card">
+          <div class="work-card-header">
+            <div class="work-logo-container">
+              <img src="./assets/globstudy-logo.png" alt="Globstudy Logo" class="work-logo globstudy-logo">
+            </div>
+            <div class="work-text-container">
+              <h3 class="org-line">Globstudy — Study Abroad & Career Services Platform</h3>
+              <p class="work-meta-line"><span class="label">Role:</span>Affiliate Marketing & Partnerships Manager</p>
+              <p class="work-meta-line"><span class="label">Duration:</span>Jul 2024 – Sep 2024 (3 mos, contract)</p>
+              <p class="work-meta-line"><span class="label">Location:</span>Samarkand, Uzbekistan</p>
+              <p class="work-scope-summary">Designed and executed affiliate marketing and partnership strategies to scale outreach across regions, aligning stakeholders and coordinating campaigns to deliver measurable results.</p>
+            </div>
+          </div>
+          <details class="work-accordion">
+            <summary>View details</summary>
+            <div class="work-accordion-content">
+              <div class="work-accordion-section">
+                <h4 class="work-accordion-title">Problem / Context</h4>
+                <p>Globstudy needed to scale student acquisition through partnerships while maintaining quality and alignment across diverse regional markets. The challenge was building a repeatable system for affiliate relationships that could grow sustainably.</p>
+              </div>
+              <div class="work-accordion-section">
+                <h4 class="work-accordion-title">What I Owned</h4>
+                <ul class="work-bullet-list">
+                  <li>Built and launched Globstudy’s first partner affiliate motion: outreach, partner onboarding, referral terms, and tracking.</li>
+                  <li>Led partner marketing execution: 4 cross-promotional campaigns with localized messaging, reaching 500+ prospective students.</li>
+                  <li>Planned and ran 3 study-abroad forums (200+ attendees), coordinating venues, speakers, and end-to-end promotion.</li>
+                </ul>
+              </div>
+              <div class="work-accordion-section">
+                <h4 class="work-accordion-title">Outputs & Outcomes</h4>
+                <ul class="work-bullet-list">
+                  <li>Onboarded 10+ partner organizations and generated 50+ student referrals in 3 months.</li>
+                  <li>Boosted student inquiries from 3 key provinces after targeted forums and localized campaigns.</li>
+                  <li>Increased inquiries in 3 priority provinces by generating 100+ partner-sourced inquiries (forms + Telegram) following localized campaigns and events.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+<img
+  src="./assets/arrow.png"
+  alt="Arrow icon"
+  class="icon arrow"
+  onclick="location.href='#projects'"
+/>
+
+<!-- Projects Section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-grid">
+        <!-- Card 1: Google Photos
+
+ -->
+        <div class="project-card">
+          <div class="project-img-container">
+            <img
+              src="./assets/project-google.png"
+              alt="Google Photos
+
+"
+              class="project-img"
+            />
+          </div>
+          <div class="project-content">
+            <h2 class="project-title">Google Photos
+
+</h2>
+            <p class="project-description">
+              A 10-week challenge with Google Photos. We researched, surveyed, prototyped, and tested solutions for <strong>transforming digital interactions</strong>.<br>
+              Delivered a UX prototype + report.
+            </p>
+            <div class="project-btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='google-photos-project.html'"
+            >
+              View Project
+            </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: AI Menu (In Progress) -->
+        <div class="project-card">
+          <div class="project-img-container">
+            <img
+              src="./assets/project-aimenu.png"
+              alt="AI Menu Project"
+              class="project-img"
+            />
+          </div>
+          <div class="project-content">
+            <h2 class="project-title">AI Menu (In Progress)</h2>
+            <p class="project-description">
+              A product idea I'm building: an <strong>AI-powered menu assistant</strong> that helps restaurants and customers with allergies, preferences, and discovery.<br>
+              Currently documenting process + prototyping.
+            </p>
+            <div class="project-btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                See Progress
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: What Should I Do Next? -->
+        <div class="project-card">
+          <div class="project-img-container">
+            <img
+              src="./assets/project-question.png"
+              alt="What Should I Do Next?"
+              class="project-img"
+            />
+          </div>
+          <div class="project-content">
+            <h2 class="project-title">What Should I Do Next?</h2>
+            <p class="project-description">
+              Drop your ideas for my next project 👇
+            </p>
+            <form id="ideaForm" class="idea-form">
+              <div class="idea-input-container">
+                <input
+                  type="text"
+                  id="ideaInput"
+                  name="idea"
+                  placeholder="Drop some ideas..."
+                  class="idea-input"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="btn btn-color-2 idea-submit-btn"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+            <div id="thankYouMessage" class="thank-you-message" style="display: none;">
+              Thank you! 🙌
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#case-studies'"
+      />
+    </section>
+<!-- Explorations Section -->
+<section id="case-studies">
+    <p class="section__text__p1">Check Out My</p>
+    <h1 class="title">Explorations</h1>
+    <div class="case-studies-container">
+      
+      <!-- Case Study 1 -->
+      <div class="case-study-card">
+        <h2 class="case-study-title">Crypto Wallets</h2>
+        <div class="case-study-img-container">
+          <img src="./assets/Crypto.png" alt="Crypto Wallet" class="case-study-img" />
+        </div>
+        <p class="case-study-text">Crypto Wallet UX Analysis — Consumer Adoption Research.</p>
+        <button class="btn btn-color-2" onclick="location.href='#'">Read</button>
+      </div>
+  
+      
+  
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#contact'"
+    />
+  </section>
+  
+    <!-- Contact Section -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:farrukh@uni.minerva.edu">farrukh@uni.minerva.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/farrukh-rasulov/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#case-studies">Explorations</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>© 2025 Farrukh Rasulov. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
