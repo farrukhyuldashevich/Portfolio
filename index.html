@@ -345,27 +345,32 @@
             <p class="project-description">
               Drop your ideas for my next project 👇
             </p>
-            <form id="ideaForm" class="idea-form">
-              <div class="idea-input-container">
-                <input
-                  type="text"
-                  id="ideaInput"
-                  name="idea"
-                  placeholder="Drop some ideas..."
-                  class="idea-input"
-                  required
-                />
-                <button
-                  type="submit"
-                  class="btn btn-color-2 idea-submit-btn"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-            <div id="thankYouMessage" class="thank-you-message" style="display: none;">
-              Thank you! 🙌
+            <form
+            id="ideaForm"
+            class="idea-form"
+            action="https://formspree.io/f/xzzjdjwl"
+            method="POST"
+          >
+            <div class="idea-input-container">
+              <input
+                type="text"
+                name="idea"
+                placeholder="Drop some ideas..."
+                class="idea-input"
+                required
+              />
+              <button
+                type="submit"
+                class="btn btn-color-2 idea-submit-btn"
+              >
+                Submit
+              </button>
             </div>
+          </form>
+
+          <div id="thankYouMessage" class="thank-you-message" style="display: none;">
+            Thank you! 🙌
+          </div>
           </div>
         </div>
       </div>
