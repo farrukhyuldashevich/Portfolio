@@ -683,3 +683,29 @@
         font-size: 1rem;
     }
 }
+
+/* Flyer exhibit (inline evidence, not a download CTA) */
+.flyer-exhibit {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 0.75rem;
+}
+.flyer-exhibit img {
+  height: 320px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.14);
+}
+.flyer-caption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0 0 0.5rem;
+}
+.flyer-caption a { color: #6b7280; text-decoration: underline; }
+.flyer-caption a:hover { color: #232429; }
+@media (max-width: 600px) {
+  .flyer-exhibit img { height: 240px; }
+}
