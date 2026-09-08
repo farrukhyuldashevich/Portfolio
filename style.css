@@ -554,6 +554,7 @@ article .icon {
 }
 
 .project-title {
+  text-align: center; /* card titles read as centred across all cards */
   font-size: 1.3rem;
   font-weight: 700;
   color: #232429;
