@@ -597,6 +597,7 @@ article .icon {
 
 .idea-input {
   flex: 1;
+  min-width: 0; /* let the input shrink instead of overflowing the card */
   padding: 0.8rem 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
