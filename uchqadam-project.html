@@ -52,7 +52,7 @@
     <div class="project-hero">
         <div class="hero-container">
             <h1>UchQadam</h1>
-            <p class="hero-subtitle">I launched a hyperlocal grocery delivery service, beat the only alternative 3× on speed and 3× on price, and got zero orders. This is what actually broke.</p>
+            <p class="hero-subtitle">I launched a hyperlocal grocery delivery service in my neighborhood, three times faster and three times cheaper than the only alternative. Thirty people scanned the flyer. Two ordered.</p>
 
             <div class="project-meta">
                 <div class="meta-item">
@@ -72,7 +72,7 @@
                 </div>
             </div>
 
-            <p class="hero-disclaimer">Printed flyers, a Telegram bot, and a partner shop. I set the kill criteria before launch and stopped when the numbers hit them.</p>
+            <p class="hero-disclaimer">Printed flyers, a QR code into Telegram, and a partner shop. I set the kill criteria before launch and stopped when the numbers hit them.</p>
         </div>
     </div>
 
@@ -107,18 +107,17 @@
             <div class="stats-grid">
                 <div class="stat-card"><div class="stat-label">Doors reached</div><div class="stat-value">250</div></div>
                 <div class="stat-card"><div class="stat-label">QR scan rate</div><div class="stat-value">12%</div></div>
-                <div class="stat-card"><div class="stat-label">Conversations started</div><div class="stat-value">2</div></div>
-                <div class="stat-card"><div class="stat-label">Orders completed</div><div class="stat-value">0</div></div>
+                <div class="stat-card"><div class="stat-label">Orders completed</div><div class="stat-value">2</div></div>
             </div>
-            <p class="stats-caption">Two weeks live, another week trying to fix it, shut down at day 30 against criteria I set before launch.</p>
-            <p>Direct mail usually runs 1 to 5%, so attention was not the problem. What broke happened after the scan, at two separate points.</p>
+            <p class="stats-caption">250 flyers → about 30 scans → 2 orders. Two weeks live, another week trying to fix it, shut down at day 30 against the bar I set before launch: fewer than five orders a week meant stop.</p>
+            <p>Direct mail usually runs 1 to 5%, so attention was not the problem. Both of the people who messaged went on to order and pay. The whole drop-off sits between scanning and sending a message.</p>
         </div>
 
         <!-- What I Built -->
         <div class="content-section">
             <h2 class="title">What I Built</h2>
-            <p><strong>Flyer with a QR code → Telegram bot → the shop's staff group chat → replies relayed back to the customer.</strong> One employee from the partner shop handled delivery. About five hours to build and effectively zero cash.</p>
-            <p>Telegram rather than an app or a website. Everyone here already opens it several times a day, so there was nothing to install and nothing to learn.</p>
+            <p><strong>Flyer with a QR code → a direct Telegram message to the shop.</strong> One employee from the partner shop took the order and handled delivery. About five hours of setup and effectively zero cash.</p>
+            <p>No bot, no app, no website. The QR code opened a normal chat with the shop, which was the shortest path I could build. Everyone here already has Telegram open several times a day, so there was nothing to install and nothing to learn.</p>
             <div class="flyer-exhibit">
                 <img src="./assets/uchqadam-flyer-front.png" alt="UchQadam flyer, front: speed, price and the Telegram QR code" loading="lazy">
                 <img src="./assets/uchqadam-flyer-back.png" alt="UchQadam flyer, back: six situations where you would want the service" loading="lazy">
@@ -135,20 +134,15 @@
             <h2 class="title">What Broke</h2>
             <div class="process-list">
                 <div class="process-item">
-                    <div class="process-title">1. The bot asked for a habit people didn't have</div>
-                    <p>People scanned, hit <em>Start</em>, and landed on a blank text prompt. No catalog, no prices. To order you had to already know what you wanted and type it out. <strong>28 of the 30 people who scanned never typed a word.</strong></p>
-                    <p>Ordering groceries by typing into a chat is new here. Changing how a neighborhood shops takes months of steady spending on educating people, and I had neither the time nor the money. A catalog in the first message would have lowered the bar, not removed it.</p>
+                    <div class="process-title">1. People scanned, then stopped</div>
+                    <p>About 30 people scanned. Two messaged. The QR opened an empty chat with no catalog, no prices and nothing to react to, so sending the first message meant already knowing what you wanted and typing it out to a shop you had never written to before.</p>
+                    <p>Scanning is free and anonymous. Messaging is neither.</p>
                 </div>
 
                 <div class="process-item">
-                    <div class="process-title">2. We lost both people who reached out</div>
-                    <p>Two people got past the prompt and messaged us. The shop did not reply in time.</p>
-                    <p>That comes down to how I set it up. I handed the customer-facing step to the partner shop and built no way to see or control what happened once a message arrived. The partner had nothing at stake, so when things went quiet there was nothing to push on.</p>
-                </div>
-
-                <div class="process-item">
-                    <div class="process-title">3. What I still do not know</div>
-                    <p>The informal version ran on a known person, a neighbor people recognized. Mine ran on a QR code and a bot. I kept the logistics and removed the trust. The shop is also only a 500-metre walk, so convenience may not have been worth much here. Both are plausible and I would want to test each properly.</p>
+                    <div class="process-title">2. What I still do not know</div>
+                    <p>I cannot say why 30 became 2. It could be that the empty chat gave people nothing to act on. It could be trust: the informal version ran on a known neighbor, mine ran on a QR code. It could be that the shop is a 500-metre walk, so convenience was never worth much here.</p>
+                    <p>Those are three different problems with three different fixes, and I stopped before finding out which one it was.</p>
                 </div>
             </div>
         </div>
@@ -156,15 +150,15 @@
         <!-- Conclusion -->
         <div class="content-section">
             <h2 class="title">What I Take From It</h2>
-            <p>I wanted to know whether people would pay for convenience, and I got zero transactions, so that question is still open. This was not a negative result. It was <strong>no result</strong>, and I would rather say that than call it market validation.</p>
-            <p>Five hours and effectively no money to rule out a direction I would otherwise have spent a summer on. I set the kill criteria before launching, fewer than five orders a week, and stopped when the data hit them.</p>
-            <p>The lesson was not about grocery delivery. <strong>Fix the service before the funnel</strong>, because a working funnel into a broken service just distributes the failure faster.</p>
+            <p>Two orders is not a business and it is well short of the five a week I had set as the bar. It is also not nothing: both people who asked went on to pay, so convenience is worth something to someone here. What I could not do was get more than two people out of thirty to send that first message.</p>
+            <p>Five hours and effectively no money to rule out a direction I would otherwise have spent a summer on. I set the kill criteria before launching and stopped when the data hit them.</p>
+            <p><strong>Attention was cheap and action was expensive.</strong> Twelve percent of doors were curious enough to scan. Seven percent of those were willing to actually ask for something. The whole business lived in the gap between those two numbers, and I had no plan for it.</p>
 
             <div class="feature-card">
                 <ul>
-                    <li><strong>Run every order myself</strong> for the first two weeks, before handing anything off.</li>
-                    <li><strong>Knock on twenty doors in week one</strong> rather than after the numbers were already in.</li>
-                    <li><strong>Put the catalog and prices in the bot's first message.</strong> One hour of work.</li>
+                    <li><strong>Put prices and a short stock list on the flyer itself</strong>, so the first message is easy to send.</li>
+                    <li><strong>Ask the people who scanned and did not write.</strong> Twenty doors, week one, not after the numbers were in.</li>
+                    <li><strong>Give people something to reply to</strong> instead of an empty chat.</li>
                 </ul>
             </div>
         </div>
